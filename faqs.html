@@ -13,32 +13,23 @@
     <title>Rimone EV charging network</title>
     <meta name="description" content="Electric vehicle charging, Rimone charge, Fast charging for EV, electric vehicle charging stations around me, best charging station, best EV charging network company, rimone mobile app"/>
     <meta name="author" content="Rimone"/>
-    <meta name="generator" content="Starfield Technologies; Go Daddy Website Builder 8.0.0000"/>
-    <meta property="og:url" content="https://rimone.godaddysites.com/"/>
-    <meta property="og:site_name" content="Rimone"/>
-    <meta property="og:title" content="Rimone EV charging network"/>
-    <meta property="og:description" content="Electric vehicle charging, Rimone charge, Fast charging for EV, electric vehicle charging stations around me, best charging station, best EV charging network company, rimone mobile app"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="en_IN"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Rimone"/>
-    <meta name="twitter:description" content="Electric vehicle charging, Rimone charge, Fast charging for EV, electric vehicle charging stations around me, best charging station, best EV charging network company, rimone mobile app"/>
-    <meta name="twitter:image:alt" content="Rimone"/>
-    <meta name="theme-color" content="#FFED53"/>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/css/owl.carousel.min.css"></script>
+    <script src="assets/js/external.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </head>
 <body class="pricing faqs">
 <header>
     <div class="header-innerwrapper">
-        <div class="logo col-md-4">
+        <div class="logo col-md-4 col-sm-4 col-xs-2">
             <img src="assets/images/logo.png" />
         </div>
 
-        <div class="menu col-md-8">
+        <div class="menu col-md-8 col-sm-8 col-xs-10">
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="solution.html">Solution</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="about.html">About</a></li>
@@ -53,101 +44,86 @@
     <h3>FREQUENTLY ASKED QUESTIONS</h3>
     <p>Have questions about EV charging? RIMONE has answers to it</p>
 
-    <div class="fqs">
-            <div class="item-wrapper">
-                <h4>What are some of our best tips for charging?</h4>
-                <ul>
-                    <li>If you are unable to activate a charge with your card or the app, try disconnecting and reconnecting the connector.</li>
-                    <li>Stop charging with a fast charger when your battery is 80% full, switch to a level 2 charger.</li>
-                    <li>Try to recharge your EV once the battery is below 10%.</li>
-                    <li>Preserve range by using your EV's regenerative braking. </li>
-                </ul>
+    <div class="container item-wrapper">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What are some of our best tips for charging?</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <ul>
+                            <li>If you are unable to activate a charger with your card or the app, try disconnecting and reconnecting the connector.</li>
+                            <li>Stop charging with a fast charger when your battery is 80% full, switch to a level 2 charger.</li>
+                            <li>Try to recharge your EV once the battery is below 10%.</li>
+                            <li>Preserve range by using your EV's regenerative braking. </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div class="item-wrapper">
-                <h4>I notice the charging rate seems to slow after I've reached about 80%.</h4>
-                <p>
-                    Your EV always controls the speed of charging. Most EVs slow the charge rate as the battery approaches a full charge to protect the battery. Above 80% it is recommended to use a Level 2 charging station to finishing charging your EV
-                </p>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">I notice the charging rate seems to slow after I've reached about 80%.</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Your EV always controls the speed of charging. Most EVs slow the charging rate as the battery approaches a full charge to protect the battery. Above 80% it is recommended to use a Level 2 charging station to finishing charging your EV
+                    </div>
+                </div>
             </div>
-
-            <div class="item-wrapper">
-                <h4>What are the factors that affect the charging speed?</h4>
-                <p>The charging session will depend on several factors including:</p>
-                <ul>
-                    <li><strong>How full your battery is or, your "State of Charge".</strong> Batteries charge fastest when they are nearly empty (low SOC) </li>
-                    <li><strong>The duration of your fast charge.</strong> As the battery fills up, the charge rate slows down to maximize the battery's longevity. Above 80% SOC, it might be better to switch to an AC Level 2 charger.</li>
-                    <li><strong>The temperature of your battery.</strong> Batteries don't like to be too hot or too cold. In extreme weather (hot or cold), your charge rate will be slower.</li>
-                    <li><strong>Battery deterioration.</strong> Batteries can deteriorate over time and lose capacity. The normal loss of a battery's capacity is defined by the vehicle's warranty.</li>
-                    <li><strong>Your vehicle's current and voltage limits.</strong> Imagine electricity as water flowing through a pipe. The amount of power (kW) you receive is the product of Voltage (V) and Current (A). Both your vehicle and the charger have voltage and current limits.</li>
-                </ul>
-                <p>
-                    When you plugin (let’s say to a 50kW charger), the charger matches your EV battery voltage and delivers current. This current is limited by either the charger or the vehicle (whichever is lower). If your EV battery has a voltage limit below 400V (let’s say 220V), the charger may deliver less than the maximum power available because the charger reached the maximum current limit (of 125A).
-                </p>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">What are the factors that affect the charging speed?</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>The charging session will depend on several factors including:</p>
+                        <ul>
+                            <li><strong>How full your battery is or, your "State of Charge".</strong> Batteries charge fastest when they are nearly empty (low SOC) </li>
+                            <li><strong>The duration of your fast charge.</strong> As the battery fills up, the charge rate slows down to maximize the battery's longevity. Above 80% SOC, it might be better to switch to an AC Level 2 charger.</li>
+                            <li><strong>The temperature of your battery.</strong> Batteries don't like to be too hot or too cold. In extreme weather (hot or cold), your charge rate will be slower.</li>
+                            <li><strong>Battery deterioration.</strong> Batteries can deteriorate over time and lose capacity. The normal loss of a battery's capacity is defined by the vehicle's warranty.</li>
+                            <li><strong>Your vehicle's current and voltage limits.</strong> Imagine electricity as water flowing through a pipe. The amount of power (kW) you receive is the product of Voltage (V) and Current (A). Both your vehicle and the charger have voltage and current limits.</li>
+                        </ul>
+                        <p>
+                            When you plugin (let’s say to a 50kW charger), the charger matches your EV battery voltage and delivers current. This current is limited by either the charger or the vehicle (whichever is lower). If your EV battery has a voltage limit below 400V (let’s say 220V), the charger may deliver less than the maximum power available because the charger reached the maximum current limit (of 125A).
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="item-wrapper">
-                <h4>What are the factors that affect the charging speed?</h4>
-                <p>
-                    Are your customers raving about you on social media? Share their great stories to help turn potential customers into loyal ones.
-                </p>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">What are the factors that affect the charging speed?</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        
+                        <li>Power rating/type of the Charger</li>
+                        <li>Battery capacity of electric vehicle</li> 
+                        <li>Power drwaing capacity of electric vehicle</li>
+                        <li>Power rating of the onboard charger of electric vehicle</li>
+                                            
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
+
+
+
 
 </div>
 
-<div class="footer">
-    <div class="f-wrapper">
-        <div class="cinfo col-md-3 col-sm-3 col-xs-12">
-            <p>Signup to receive the latest info on new charging stations, special offers, charging news, and more!</p>
-            <form>
-                <input type="email" placeholder="Email Address" required />
-            </form>
-            <div class="logo">
-                <img src="assets/images/logo.png" />
-            </div>
-        </div>
-        <div class="fmenu col-md-3 col-sm-3 col-xs-12">
-            <h5>Get In Touch</h5>
-            <ul class="footer-list">
-                <li><a href="contact-us.html">Need Help?</a></li>
-                <li><a href="">Media</a></li>
-                <li><a href="contact-us.html">Suggest a Site</a></li>
-                <li><a href="">Host a Site</a></li>
-                <li><a href="">Become a Partner</a></li>
-            </ul>
-        </div>
-        <div class="fmenu col-md-3 col-sm-3 col-xs-12">
-            <h5>Company</h5>
-            <ul class="footer-list">
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Sustainability</a></li>
-                <li><a href="">Diversity & Inclusion</a></li>
-                <li><a href="">Leadership</a></li>
-                <li><a href="contact-us.html">Careers</a></li>
-                <li><a href="">News & Publications</a></li>
-            </ul>
-        </div>
-        <div class="app col-md-3 col-sm-3 col-xs-12">
-            <a href="#"><img src="assets/images/istore.png" /></a>
-            <a href="#"><img src="assets/images/gstore.png" /></a>
-        </div>
-    </div>
 
-    <div class="credit">
-        <div class="cc col-md-4 col-sm-4 col-xs-12">
-            Copyright © 2021 Rimone - All Rights Reserved.
-        </div>
-        <div class="terms col-md-4 col-sm-4 col-xs-12">
-            Terms of Services | Privacy Policy
-        </div>
-        <div class="social col-md-4 col-sm-4 col-xs-12">
-            <a href=""><i class="fa fa-fw fa-facebook"></i></a>
-            <a href=""><i class="fa fa-fw fa-instagram"></i></a>
-            <a href=""><i class="fa fa-fw fa-twitter"></i></a>
-        </div>
-    </div>
+<div id="footer"></div>
 
-</div>
 </body>
 </html>

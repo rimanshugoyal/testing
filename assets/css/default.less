@@ -14,7 +14,14 @@ Solution Page
       width: 100%;
       z-index: 999999;
       padding: 20px;
+      @media screen and (max-width: 768px) {
+        padding: 5px 0;
+        background: black;
+      }
       .logo {
+        @media screen and (max-width: 768px) {
+          padding: 0 5px !important;
+        }
         img {
           width: 60px;
         }
@@ -23,6 +30,9 @@ Solution Page
         .nav-wrapper {
           text-align: right;
           ul {
+            @media screen and (max-width: 768px) {
+              padding: 0;
+            }
             li {
               display: inline-block;
               a {
@@ -30,6 +40,9 @@ Solution Page
                 display: inline-block;
                 text-transform: uppercase;
                 color: white;
+                @media screen and (max-width: 768px) {
+                  padding: 5px;
+                }
               }
             }
           }
@@ -42,6 +55,9 @@ Solution Page
       bottom: 0;
       left: 0;
       z-index: -99;
+      @media screen and (max-width: 768px) {
+        margin-top: 55px;
+      }
       video {
         width: 100%;
       }
@@ -76,6 +92,9 @@ Solution Page
         border: 1px solid #efefef;
       }
       .item-wrapper {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 50px;
+        }
         span {
           display: block;
         }
@@ -205,6 +224,9 @@ Solution Page
         display: inline-block;
         margin: 40px 0;
         .img-wrapper {
+          @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+          }
           img {
             width: 100%;
             border-radius: 10px;
@@ -254,6 +276,9 @@ Solution Page
     margin: 0 auto;
     padding: 60px 0;
     text-align: left;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
     h4 {
       font-size: 20px;
       margin-bottom: 30px;
@@ -380,6 +405,9 @@ Solution Page
       .htext {
         text-align: left !important;
         margin: 110px 0;
+        @media screen and (max-width: 768px) {
+          margin: 10px;
+        }
       }
     }
   }
@@ -399,6 +427,11 @@ Solution Page
     text-align: center;
     .item-wrapper {
       margin-bottom: 30px;
+      #accordion {
+        @media screen and (min-width: 768px) {
+          margin: 20px 70px !important;
+        }
+      }
       h4 {
         text-align: left;
         font-size: 22px;
@@ -445,6 +478,9 @@ Solution Page
   p.pinfo {
     width: 50%;
     margin: 0 auto !important;
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
   }
   .abtheros {
     margin-top: 50px;
@@ -483,6 +519,9 @@ Solution Page
   p.pinfo {
     width: 50% !important;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 70% !important;
+    }
   }
   .business {
     h3 {
@@ -679,6 +718,9 @@ Solution Page
   .prices {
     padding: 40px 0;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
     h3 {
       text-align: center;
       color: #a19535;
@@ -692,12 +734,19 @@ Solution Page
     }
     .item-wrapper {
       ul {
+        @media screen and (max-width: 768px) {
+          margin: 0px;
+          padding: 0;
+        }
         li {
           display: inline-block;
           text-align: left;
           width: 30%;
           margin-bottom: 30px;
           font-size: 17px;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
           &:before {
             content: "\f111";
             font-family: "FontAwesome";
@@ -741,6 +790,9 @@ Solution Page
         overflow: auto;
         display: inline-block;
         margin: 40px 0;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 0px;
+        }
         .img-wrapper {
           img {
             width: 100%;
@@ -749,6 +801,9 @@ Solution Page
         .htext {
           text-align:center;
           margin: 40px 0;
+          @media screen and (max-width: 768px) {
+            margin-bottom: 0px;
+          }
           h4 {
             font-size: 32px;
             color: #a19535;
@@ -784,11 +839,60 @@ Solution Page
       margin-top: 0;
       text-align: center;
     }
-    .items {
-      img {
-        width: 100%;
+
+
+      .owl-carousel {
+        display: inline-block !important;
       }
-    }
+      .owl-carousel .owl-stage-outer {
+        overflow: hidden;
+      }
+
+        .owl-feat-item {
+          img {
+            width: 100%;
+          }
+        }
+        .owl-nav {
+          display: none;
+          button  {
+
+          }
+          button.owl-next {
+
+          }
+
+        }
+
+      .slidecaption {
+        z-index: 9999;
+        text-align: center;
+      }
+      .slide-title {
+        display: inline-block;
+        color: grey;
+        font-size: 20px;
+        line-height: 21px;
+        padding: 29px;
+        letter-spacing: 1.3px;
+        font-weight: 600;
+        margin: 0;
+      }
+      button.resize {
+        border-radius: 0;
+        background: black;
+        color:yellow;
+        box-shadow: none;
+        border: 0;
+        text-shadow: none;
+        padding: 29px;
+        position: absolute;
+        right: 0;
+        z-index: 999999;
+      }
+
+
+
   }
 
   .ahero {
@@ -901,10 +1005,16 @@ Solution Page
     display: inline-block;
   }
   .cinfo {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     p {
       color: white;
       width: 80%;
       margin-bottom: 20px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
     form {
       margin-bottom: 20px;
@@ -915,6 +1025,9 @@ Solution Page
         color: white;
         padding: 10px;
         border-bottom: 1px solid #efefef;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
     .logo {
@@ -924,6 +1037,9 @@ Solution Page
     }
   }
   .fmenu {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     h5 {
       color: white;
       font-size: 16px;
@@ -949,6 +1065,9 @@ Solution Page
         width: 200px;
         border: 1px solid #efefef;
         border-radius: 5px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -958,12 +1077,26 @@ Solution Page
     color: #969696;
     .cc {
       text-align: left;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        text-align: center;
+      }
     }
     .terms {
       text-align: center;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: #969696;
+      }
     }
     .social {
       text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
       a {
         padding: 10px;
         background: white;

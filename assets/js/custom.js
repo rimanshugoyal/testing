@@ -1,8 +1,30 @@
-!function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){e.exports=n(1)},function(e,t,n){"use strict";window.guacImage=n(2),window.guacDefer=n(3),window.deferBootstrap=n(4),window.onAllowCookieTracking=n(5)},function(e,t,n){"use strict";function o(e,t,n,o){const c=(n=n||{}).delay||500,u=n.cellSize||{x:20,y:20};let a,s,d,l,f,w,g,b=!0;const h=function(e){const o='url("'+e+'")';let r=o;if(n.backgroundLayers&&n.backgroundLayers.constructor===Array){const e=n.backgroundLayers.map((function(e){return e.replace(/{width}/g,d.w).replace(/{height}/g,d.h)}));r=[].concat(e,[o]).join(", ")}t.style.backgroundImage=r,setTimeout((function(){t.style.opacity=1}),300)}.bind(this),p=function(){b&&(o?o(s,d):n.useTreatmentData?h(s):t.style.backgroundImage='url("'+s+'")',t.setAttribute("data-guac-image","loaded"))}.bind(this),v=function(){const e=document.createElement("img");e.src=s,e.complete||!e.addEventListener?p():e.addEventListener("load",p)}.bind(this),m=function(){if(!b)return;t.setAttribute("data-guac-image","loading"),a=null;const n=r(t,u);return n?(d||(d=n),n.w!==d.w||n.h!==d.h?(d=n,f(1)):(s=i(e,n,u),void(s!==l?(l=s,!g&&window.IntersectionObserver?(g=new window.IntersectionObserver((e,t)=>{e.forEach(e=>{const{target:n,isIntersecting:o}=e;o&&(v(),t.unobserve(n))})}),g.observe(t)):v(),!w&&window.MutationObserver&&(w=new MutationObserver((function(){f(1)})),w.observe(t,{childList:!0,subtree:!0}))):t.setAttribute("data-guac-image","loaded")))):f()}.bind(this);f=function(e){a&&clearTimeout(a),a=setTimeout(m,isNaN(e)?c:e)}.bind(this),this.unmount=function(){a&&(clearTimeout(a),a=null),window.removeEventListener("resize",f),w&&w.disconnect(),g&&g.disconnect(),b=!1};const y=function(){t.removeEventListener("load",y),window.addEventListener("resize",f),m()};window.guacDefer&&!n.loadEagerly?(t.addEventListener("load",y),window.guacDefer.background(t)):y()}function r(e,t){const n={w:t.x,h:t.y};if("undefined"!=typeof window&&e){const t=Math.min(window.devicePixelRatio||1,3),o=window.getComputedStyle(e);if(n.w=Math.round(parseInt(o.width,10)*t),n.h=Math.round(parseInt(o.height,10)*t),isNaN(n.w)||isNaN(n.h))return}return n}function i(e,t,n){const o=t.w%n.x,r=t.h%n.y,i=Math.max(o?t.w+(n.x-o):t.w,n.x),c=Math.max(r?t.h+(n.y-r):t.h,n.y);return e.replace(/\{width\}/g,i).replace(/\{height\}/g,c)}o.getUrl=function(e,t,n){if(!t)throw new Error("cellSize is required");const o=r(n,t);if(o)return i(e,o,t)},e.exports=o},function(e,t,n){"use strict";let o=[],r=!1;const i=function(e){e.dispatchEvent(new Event("load"))},c={background:new IntersectionObserver((function(e,t){e.forEach((function(e){e.isIntersecting&&(t.unobserve(e.target),i(e.target))}))}),{rootMargin:"50% 0%"})};window.addEventListener("load",(function(){o.forEach((function(e){window.requestIdleCallback((function(){c.background.unobserve(e),i(e)}))})),r=!0,o=[]})),e.exports={background:function(e){if(window.requestIdleCallback){if(r)return void i(e);o.push(e)}c.background.observe(e)}}},function(e,t,n){"use strict";const o=new Set,r={},i="undefined"!=typeof window&&new window.IntersectionObserver((e,t)=>{e.forEach(e=>{const{target:n,isIntersecting:o}=e;o&&(window.Core.utils.renderBootstrap(r[n.id]),delete r[n.id],t.unobserve(n))})});e.exports=function(e,t=!1){const{radpack:n,elId:c}=e;n&&t&&window.radpack.getDeps(n).then(e=>{e.forEach(e=>{if(!o.has(e)){const t=document.createElement("link");t.rel="prefetch",t.href=e,t.as="script",t.crossOrigin="Anonymous",document.head.appendChild(t),o.add(e)}})}),r[c]=e,i.observe(document.getElementById(c))}},function(e,t,n){"use strict";e.exports=function(e){return window._allowCT?void e():(window._allowCTListener=window._allowCTListener||[],void window._allowCTListener.push(e))}}]);
-"use strict";
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js');
+$(function(){
+    $(".owl-carousel").each(function(){
+        $(this).owlCarousel({
+            items: 2,
+            margin: 10,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            autoHeight:true,
+            animateOut: 'fadeOut',
+            loop: true,
+            dots: false,
+            // nav: false,
+            // navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                400 : {
+                    items : 1,
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 3,
+                },
+                991 : {
+                    items: 6,
+                }
+            }
+        });
     });
-}
+    $("#footer").load("footer.html");
+});

@@ -1,7 +1,11 @@
 body {
   overflow-x: hidden;
-
-
+  
+  _::-webkit-full-page-media, _:future, :root .safari_only {
+    #page {
+     margin-top: 0 !important;
+    }
+  }
 /***
 Solution Page
 ***/
@@ -74,6 +78,20 @@ Solution Page
       border-radius: 3px;
       color: black;
       font-weight: 600;
+    }
+  }
+  .hero {
+    .items {
+      @media screen and (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        .htext {
+          order: 2;
+        }
+        .img-wrapper {
+          order: 1;
+        }
+      }
     }
   }
   #page {
@@ -190,8 +208,8 @@ Solution Page
 /***
   Solution Page
 ***/
-.solution #page {
-  margin-top: 100px;
+.solution .pcontainer-wrapper {
+  padding-top: 100px;
 
   .solutions {
     padding: 40px 0;
@@ -223,6 +241,18 @@ Solution Page
         overflow: auto;
         display: inline-block;
         margin: 40px 0;
+
+          @media screen and (max-width: 768px) {
+            display:flex;
+            flex-direction: column;
+            .htext {
+              order: 2;
+            }
+            .img-wrapper {
+              order: 1;
+            }
+          }
+        
         .img-wrapper {
           @media screen and (max-width: 768px) {
             margin-bottom: 30px;
@@ -311,6 +341,9 @@ Solution Page
     .htext {
       margin: 0 auto;
       width: 60%;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+      }
       p {
         text-align: center !important;
       }
@@ -343,10 +376,23 @@ Solution Page
   .abtheros {
     padding: 40px 0;
     .item-wrapper {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0!important;
+      }
       .items {
         overflow: auto;
         display: inline-block;
         margin: 40px 0;
+        @media screen and (max-width: 768px) {
+          display:flex;
+          flex-direction: column;
+          .htext {
+            order: 2;
+          }
+          .img-wrapper {
+            order: 1;
+          }
+        }
         .img-wrapper {
           img {
             width: 100%;
@@ -402,6 +448,16 @@ Solution Page
       margin-bottom: 50px;
     }
     .items {
+      @media screen and (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        .htext {
+          order: 2;
+        }
+        .img-wrapper {
+          order: 1;
+        }
+      }
       .htext {
         text-align: left !important;
         margin: 110px 0;
@@ -692,8 +748,8 @@ Solution Page
 /***
   Pricing Page
 ***/
-.pricing #page {
-    margin-top: 130px;
+.pricing .pcontainer-wrapper {
+    padding-top: 130px;
     h3 {
       text-align: center;
       color: #a19535;
@@ -765,8 +821,9 @@ Solution Page
 /***
   About Page
 ***/
-.about #page {
-  margin-top: 130px;
+.about .pcontainer-wrapper
+{
+  padding-top: 130px;
     h3 {
       text-align: center;
       color: #a19535;
@@ -786,12 +843,21 @@ Solution Page
   .abtheros {
     padding: 40px 0;
     .item-wrapper {
+
       .items {
         overflow: auto;
         display: inline-block;
         margin: 40px 0;
         @media screen and (max-width: 768px) {
           margin-bottom: 0px;
+          display:flex;
+          flex-direction: column;
+          .htext {
+            order: 2;
+          }
+          .img-wrapper {
+            order: 1;
+          }
         }
         .img-wrapper {
           img {
@@ -930,8 +996,8 @@ Solution Page
 /***
   Gud Page
 ***/
-.contact #page {
-    margin-top: 130px;
+.contact .pcontainer-wrapper {
+    padding-top: 130px;
     h3 {
       text-align: center;
       color: #a19535;

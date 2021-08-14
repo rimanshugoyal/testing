@@ -19,6 +19,24 @@
     <script src="assets/js/external.js"></script>
     <script src="assets/js/custom.js"></script>
 
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "rimtest246@gmail.com",
+        Password: "Test@123",
+        To: 'rimtest246@gmail.com',
+        From: "rimtest246@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+  
 </head>
 <body class="contact">
 	<header>
@@ -57,7 +75,7 @@
                           <input type="tel" placeholder="Phone Number*" required />
                           <input type="text" placeholder="Compnay Name*" required />
                           <textarea placeholder="Message*" required ></textarea>
-                          <input type="submit" value="SEND" />
+                          <input type="submit" value="SEND" onClick=sendEmail() />
                           <p>
                             This site is protected by reCAPTCHA and the Privacy Policy and Terms of Service apply.
                           </p>

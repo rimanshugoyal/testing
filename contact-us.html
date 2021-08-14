@@ -22,6 +22,7 @@
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script type="text/javascript">
     function sendEmail() {
+	 console.log("inside email");
       Email.send({
         Host: "smtp.gmail.com",
         Username: "rimtest246@gmail.com",
@@ -69,13 +70,13 @@
                   <div class="form">
 
                       <form aria-live="polite" data-ux="Form" class="">
-                          <input type="text" placeholder="First Name*" required />
-                          <input type="text" placeholder="Last Name*" required />
-                          <input type="email" placeholder="Email*" required />
-                          <input type="tel" placeholder="Phone Number*" required />
-                          <input type="text" placeholder="Compnay Name*" required />
-                          <textarea placeholder="Message*" required ></textarea>
-                          <input type="submit" value="SEND" onClick=sendEmail() />
+                          <input type="text" placeholder="First Name*" />
+                          <input type="text" placeholder="Last Name*" />
+                          <input type="email" placeholder="Email*"  />
+                          <input type="tel" placeholder="Phone Number*"  />
+                          <input type="text" placeholder="Compnay Name*" />
+                          <textarea placeholder="Message*"  ></textarea>
+                          <input value="SEND" onClick=sendEmail() />
                           <p>
                             This site is protected by reCAPTCHA and the Privacy Policy and Terms of Service apply.
                           </p>

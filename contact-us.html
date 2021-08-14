@@ -69,14 +69,14 @@
                   <span>Let us help You!!!</span>
                   <div class="form">
 
-                      <form aria-live="polite" data-ux="Form" class="">
+                      <form aria-live="polite" data-ux="Form" class="" onsubmit="return false">
                           <input type="text" placeholder="First Name*" />
                           <input type="text" placeholder="Last Name*" />
                           <input type="email" placeholder="Email*"  />
                           <input type="tel" placeholder="Phone Number*"  />
                           <input type="text" placeholder="Compnay Name*" />
                           <textarea placeholder="Message*"  ></textarea>
-                          <input value="SEND" onClick=sendEmail() />
+                          <input type="submit" value="SEND" onClick=sendEmail() />
                           <p>
                             This site is protected by reCAPTCHA and the Privacy Policy and Terms of Service apply.
                           </p>

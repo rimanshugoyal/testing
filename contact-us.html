@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/default.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.css">
-	<link rel="stylesheet"  type="text/css" href="assets/css/myCustom.css">
+	<link rel="stylesheet"  type="text/css" href="assets/css/mycustom.css">
     <link rel="stylesheet" type="text/css" href="#">
     <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -19,40 +19,41 @@
     <script src="assets/js/external.js"></script>
     <script src="assets/js/custom.js"></script>
 
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script type="text/javascript">
-    function sendEmail() {
-	 console.log("inside email");
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "rimtest246@gmail.com",
-        Password: "Test@123",
-        To: 'rimanshugoyal@hotmail.com',
-        From: "rimtest246@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
-  
 </head>
 <body class="contact">
 	<header>
         <div class="header-innerwrapper">
-            <div class="menu col-md-8 col-sm-8 col-xs-10 menu-custom">
-				<div class="logo marg-5-top col-md-4 col-sm-4 col-xs-2">
-					<a href="index.html"><img src="assets/images/logo.png" />
-				</div>
-                <div class="nav-wrapper" style="width: inherit; text-align: left">
-                    <ul style="margin:revert">
-                        <li class="nav-btn"><a href="index.html">Home</a></li>
-                        <li class="nav-btn"><a href="solution.html">Solution</a></li>
-                        <li class="nav-btn"><a href="pricing.html">Pricing</a></li>
-                        <li class="nav-btn"><a href="about.html">About</a></li>
-                        <li class="nav-btn"><a href="contact-us.html">Contact Us</a></li>
+            <div class="logo col-md-4  col-sm-4 col-xs-2">
+                <img src="assets/images/logo.png" />
+            </div>
+
+            <div class="menu col-md-8 col-sm-8 col-xs-10" style="height: 6rem;line-height: 3;left: 18%;position: absolute;>
+                <div class="nav-wrapper">
+                    <a href="#menu" class="menu-link">&#9776;</a>
+                    <nav id="menu" class="panel" role="navigation">
+                        <div class="site-identity">
+                            <img src="assets/images/logo.png" />
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="solution.html">Solution</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+
+                        <div class="appsd"  style="text-align: center">
+                            <a href="#"><img src="assets/images/istore.png" /></a>
+                            <a href="#"><img src="assets/images/gstore.png" /></a>
+                        </div>
+                    </nav>
+
+                    <ul id="bmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solution.html">Solution</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,16 +70,16 @@
                   <span>Let us help You!!!</span>
                   <div class="form">
 
-                      <form aria-live="polite" data-ux="Form" class="" onsubmit="return false">
-                          <input type="text" placeholder="First Name*" />
-                          <input type="text" placeholder="Last Name*" />
-                          <input type="email" placeholder="Email*"  />
-                          <input type="tel" placeholder="Phone Number*"  />
-                          <input type="text" placeholder="Compnay Name*" />
-                          <textarea placeholder="Message*"  ></textarea>
-                          <input type="submit" value="SEND" onClick=sendEmail() />
+                      <form aria-live="polite" data-ux="Form" class="">
+                          <input type="text" placeholder="First Name*" required />
+                          <input type="text" placeholder="Last Name*" required />
+                          <input type="email" placeholder="Email*" required />
+                          <input type="tel" placeholder="Phone Number*" required />
+                          <input type="text" placeholder="Compnay Name*" required />
+                          <textarea placeholder="Message*" required ></textarea>
+                          <input type="submit" value="SEND" />
                           <p>
-                            This site is protected by reCAPTCHA and the Privacy Policy and Terms of Service apply.
+                            This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
                           </p>
                       </form>
                   </div>
@@ -89,11 +90,11 @@
                     <p class="hinfo">
                         Thank you for your enquiry. Our concerned team will be contacting you soon to help you with your query.
                     </p>
-					<p class="hinfo">
+				<p class="hinfo">
                         You can also directly reach out to us at
                     </p>
 					<p>
-                       Email - rimonecharge.com
+                       Email - rimonecharge@gmail.com
                     </p>
 					<p>
                        Ph. +91-7696012280

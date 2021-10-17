@@ -20,5 +20,5 @@ function sendMail() {
 	  alert("mail sent successfully")
 	});
 	return false;
-};
+}
 

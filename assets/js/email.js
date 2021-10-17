@@ -10,7 +10,7 @@ function sendMail() {
 	Host: "smtp.gmail.com",
 	Username: "rimtest246@gmail.com",
 	Password: "Test@123",
-	To: 'rimonecharge@gmail.com',
+	To: "rimonecharge@gmail.com",
 	From: "rimtest246@gmail.com",
 
 	Subject: subject,

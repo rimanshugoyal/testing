@@ -16,7 +16,7 @@ function sendMail() {
 	Subject: subject,
 	Body: body,
 	})
-	.then(function (message) {
+	.then(function () {
 	  alert("mail sent successfully")
 	});
 	return false;

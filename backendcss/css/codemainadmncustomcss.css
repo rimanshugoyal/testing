@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+	font-family:sregular;
+	src:url("../../content/font/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face
+{
+	font-family:sBold;
+	src:url("../../content/font/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
+h6
+{
+	font-family:sregular;
+}
+
+
+.icon-color
+{
+	color:#4239B8;
+}
+.primary-color
+{
+	background:#4239B8;
+}
+
+.footet-color
+{
+	background:#1a1a1a;
+}
+
+.loginadmncontainerfluid
+{
+	height:400px;
+}
+.loginadmncard
+{
+	
+	width:auto;
+	border-radius: 12px;
+	height:auto;
+	
+	
+}
+
+.login-btn
+{
+	
+	border-radius: 25px;
+	width: 140px;
+	height: 40px;
+	background:#4239B8;
+	text-align: center;
+	font-family: sregular;
+	font-size: 0.898em;
+	color:#ffffff;
+}
+.login-btn:hover{
+	background: #efefef;
+	color:#4239B8;
+	border:1px solid #4239B8;
+}
+.login-btn:focus{
+	outline:none;
+}
+
+.login-btn::active {
+outline: none;
+border: none;
+}
+
+
+
+.tablemain-card
+{
+	border-radius: 10px;
+	width:100%;
+}
+
+.table-main
+{
+	 margin: auto;
+	background: #ffffff;
+	border-radius: 10px;
+	width:100%;
+  }
+
+
+
+.table-main th , tr
+{
+	
+	font-family:sregular;
+	font-size: 14px;
+}
+
+
+.footer-main
+{
+	height: auto;
+	border:1px solid rgba(0,0,0,.1);
+}
+.footer-main ul
+{
+	list-style-type: none;
+}
+
+.footer-main a
+{
+        color:#ffffff;
+	text-decoration: none;
+	
+}
+
+.footer-main a:hover
+{
+        color:#ffffff;
+	text-decoration: none;
+	
+}
+
+.footer-main a:focus
+{
+        color:#ffffff;
+	text-decoration: none;
+	
+}
+.footer-loan
+{
+	color:#cfd8dc;
+}

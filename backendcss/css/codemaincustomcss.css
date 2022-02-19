@@ -2,16 +2,18 @@
 /* CSS Document */
 
 
+/*--------------------------------- icon codes and color start ---------------------------------*/
 .twittericon-color
 {
 	color:#1DA1F2;
 }
-
-
 .youtubeicon-color
 {
 	color:#FF0000;
 }
+/*--------------------------------- icon codes and color end ---------------------------------*/
+
+/*------------------------------------ slider start ---------------------------------------*/
 .carousel-height
 {
 	height: 450px;
@@ -40,11 +42,11 @@
 }
 .carousel-content-btn
 {
-	font-size: .75rem;
+	font-size: 15px;
 }
+/*------------------------------------ slider start ---------------------------------------*/
 
-
-
+/*--------------------------- newsroom section end ----------------------------------*/
 .newsroom-title a
 {
 	text-decoration: none;
@@ -59,12 +61,13 @@
 
 .newsroom-tittle-date
 {
-	font-size: .75rem;
+	font-size: 14px;
 }
 
 .newsroom-title-heading
 {
-	font-size:.9375rem;
+	font-size:32px;
+	color:#a19535;
 	line-height: 1.4em;
 }
 
@@ -72,23 +75,29 @@
 {
 	width: 	290px;
 	height: 192px;
+	object-fit: cover;
 }
 
 .newsroom-title-description
 {
-	font-size:.9375rem;
-	
+	font-size:15px;
 }
 
 .newsroom-title-description-readmore 
 {
-	font-size:.75rem;
-	font-weight: bold;
-	
+	font-size:15px;	
 }
 
+.newsroom-title-description-morecontent span {
+    display: none;
+}
+.newsroom-title-description-morelink {
+    display: block;
+}
 
-/*--------------------------- Images section ----------------------------------*/
+/*--------------------------- newsroom section end ----------------------------------*/
+
+/*--------------------------- Images section start ----------------------------------*/
 .images-gallery-title a
 {
 	text-decoration: none;
@@ -104,18 +113,19 @@
 
 .images-gallery-title-description
 {
-	font-size:.75rem;
+	font-size:15px;
 	
 }
 
 .images-gallery-title-description-readmore 
 {
-	font-size:.75rem;
+	font-size:15px;
 	font-weight: bold;
 	
 }
+/*--------------------------- Images section end ----------------------------------*/
 
-/*------------------------------- videos section ------------------------------------*/
+/*------------------------------- videos section start ------------------------------------*/
 
 .videos-gallery-title a
 {
@@ -137,16 +147,16 @@
 
 .videos-gallery-title-description
 {
-	font-size:.9375rem;
+	font-size:15px;
 	
 }
 
 .videos-gallery-title-description-readmore 
 {
-	font-size:.75rem;
+	font-size:15px;
 	font-weight: bold;
 	
 }
 
-
+/*------------------------------- videos section end ------------------------------------*/
 

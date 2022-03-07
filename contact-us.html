@@ -70,14 +70,14 @@
                   <span>Let us help You!!!</span>
                   <div class="form">
 
-                      <form aria-live="polite" data-ux="Form" class="contactForm" onsubmit="sendMail(); return false;">
+                      <form aria-live="polite" data-ux="Form" class="contactForm" onsubmit="return false;">
                           <input type="text" placeholder="First Name*" name="first" required />
                           <input type="text" placeholder="Last Name*" name="last" required />
                           <input type="email" placeholder="Email*" name="email" required />
                           <input type="tel" placeholder="Phone Number*" name="phone" required />
                           <input type="text" placeholder="Company Name*" name="company" required />
                           <textarea placeholder="Message" name="message" required ></textarea>
-                          <input type="submit" value="SEND" />
+                          <input type="submit" value="SEND" onclick="sendMail()" />
                           <p>
                             
                           </p>

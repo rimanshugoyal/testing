@@ -3,6 +3,7 @@
 this code is missing in bestwaystocharge, clientform, contactus, FAQ, Footer, Index, Privacy, solutions, 
 3. on FAQ Page, the first line of answers to the questions, seems to got cut, the display of first line is not proper.
 4. Make "location type" & "enquiry type" required in the client form. 
+5. Image size on the charging basics page needs to be reduce and aligned along the texts
 
 
 

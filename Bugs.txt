@@ -5,7 +5,9 @@ this code is missing in bestwaystocharge, clientform, contactus, FAQ, Footer, In
 4. Make "location type" & "enquiry type" required in the client form. 
 5. Image size on the charging basics page needs to be reduce and aligned along the texts
 6. the message "message sent" is not appearing on clientform page after submit.
-
+7. The text "Thanks for choosing rimone" on contactus page needs to allign.
+8. The video on the index page needs to correct.
+9. when on mobile, on contactus page, the space after call icon is less . between form start and call icon.
 
 
 

@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('.menu-link').bigSlide();
 });
 
-
+// to stop image reloading upon refreshing
 $(document).ready(function () {
     $("body").show();
 });

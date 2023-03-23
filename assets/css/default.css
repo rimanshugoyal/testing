@@ -178,7 +178,7 @@ body header .video-background {
         margin-top: 55px
     }
 }
-body header .video-background video {
+.video-background video {
     width: 100%
 }
 body .home header {
@@ -718,6 +718,9 @@ body #page .btm-img img {
 }
 
 /* ********************************************************** Charging Basics Page ************************************************************** */
+
+
+
 /******** Section 1 *********/
 /* 1.1 H3 Heading */
 .charging-basics h3 {
@@ -759,11 +762,17 @@ body #page .btm-img img {
     font-size: 45px !important;
     margin-bottom: 10px
 }
-/* 2.4 Horizontal Line */
+/* 2.6 Horizontal Line */
 .charging-basics .icons hr {
     width: 50px;
     border: 1px solid #efefef
 }
+/* 2.6 Slide image orientation */
+.charging-basics .img-wrapper {
+    position: relative;
+    align-items: center;
+    text-align: center;
+ }
 
 /* ********************************************************** Business Button Page ************************************************************** */
 /******** Section 1 *********/
@@ -1236,11 +1245,20 @@ body #page .btm-img img {
 }
 
 /* **************************************************** Contact Us Page ****************************************************** */
+.contact .row{
+    padding-top: 15px;
+}
 
 .contact .pcontainer-wrapper {
     padding-top: 130px
 }
-
+.contact .pcontainer-wrapper h1 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40rem;
+    font-weight: 600;
+    margin-bottom: 10px
+} 
 .contact .pcontainer-wrapper h3 {
     text-align: center;
     color: #a19535;

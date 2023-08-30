@@ -1,1 +1,6 @@
-None as on 9-6-23
+30-08-23
+
+1. FAQ page - FAQ text on the top
+2. FAQ page - Need Help ? section
+3. FAQ Page - when moving the arrow on FAQ's, it turns to I instead of a selecting hand with finger
+4. Careers page - images are not getting displayed.

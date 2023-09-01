@@ -692,10 +692,12 @@ section {
   width: 100%;
   height: 70vh;
   background: #ffc90e;
+  align-items: center;
+  
 }
 
 #section1 .containers1 {
-  padding: 40px;
+  padding:8%;
 }
 
 /* heading for the header  */
@@ -821,11 +823,11 @@ section {
     transform: translateY(-10px);
   }
 }
-#section1 .hiring-image {
-  height: 350px;
+#section1 .hiring-image 
+{
+	height: 500%;
   width: 100%;
   align-items: center;
-  object-fit: contain;
 }
 
 /* Section 2 - Benefits and Perks */

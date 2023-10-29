@@ -26,11 +26,11 @@ $(document).ready(function () {
       
 	    //Job Posting 3
 	  
-	    // { title: "Backend Developer",
-    	// category: "software", 
-		// description:" Job Description: <br>As a Backend Developer at Rimone Charge, you will play a crucial role in enhancing our technology infrastructure. Your responsibilities will include developing, testing, and maintaining the backend of our systems, ensuring they run smoothly and efficiently. Your expertise will contribute directly to the seamless experience we provide to our customers in the field of electric vehicle charging.  <br><br>Part-Time Opportunity: <br>We understand the importance of work-life balance, which is why we are offering this position as a part-time role. You will have the flexibility to work 2-3 hours a day, totaling approximately 80 hours a month. The working hours are entirely adaptable to your schedule, and you have the freedom to work from anywhere you choose. This setup allows you to integrate your professional commitments seamlessly with your lifestyle.<br><br>Compensation:<br>In return for your valuable contributions, we will be offering a monthly compensation for this part-time role.If you find this role aligning with your skills and aspirations, and if you are excited about contributing to the growth of sustainable mobility solutions, we encourage you to Apply.<br><br>Deadline:<br>Please make sure to fill out the form before 31st Aug 2023. This will help us gather more information about your experience and availability. Once we review the submissions, we will be in touch to discuss the next phase of the selection process.", 
-		// applyLink: "https://forms.gle/TSazztX3XZQ3DinL9" 
-	    // },
+	     { title: "Technician",
+    	 category: "Infrastructure and Hardware", 
+		 description:" Job Description: <br>As a Technician at Rimone Charge, you will play a crucial role in onsite works of operations and maintainance of our technology infrastructure. Your responsibilities will include ensuring proper delivery and installation of AC and DC fast chargers on the location. Conducting a test charging session and by coordinating with Charger Network Management Team, integrating charger with Rimone backend for seamless charging operations. You need to travel to different location on requirement basis and resolving any technical and hardware issues on site if there may be any. <br><br>Requirement: <br>Technician should be aware of all the basic electrical knowdledge of wires, cables, connections and suppy working. Must have an experience in working with LT and HT cable connections of atleast 2 year. Candidate should have their own toolkit which must include hammer drill, screwdrivers, pliers, multimeter etc. <br><br>Location:<br>Patiala, Punjab <br><br>Compensation:<br>In return for your valuable contributions, we will be offering a work based compensation for role. The travel allowances will be given seperatly. If you find this role aligning with your skills and aspirations, and if you are excited about contributing to the growth of sustainable mobility solutions, we encourage you to Apply. You can drop your message on the contactus page or directly call us at our customer support number.", 
+		 applyLink: "https://rimonecharge.com/contactus.html" 
+	     },
 
     ];
   
